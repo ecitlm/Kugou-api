@@ -92,7 +92,17 @@ __必选参数:__
 
 `singerid` : 歌手id  3060 
 
-__接口地址:__ `http://m.kugou.com//singer/info/3060&json=true`
+__接口地址:__ `http://m.kugou.com/singer/info/3060&json=true`
+
+### 音乐详情
+
+__说明:__ 获取 歌手分类
+
+__必选参数:__
+
+`hash` : 音乐列表下的 音乐id 
+
+__接口地址:__ `http://m.kugou.com/app/i/getSongInfo.php?cmd=playInfo&hash={$hash}`
 
 
 
