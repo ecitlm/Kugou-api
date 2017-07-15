@@ -72,3 +72,28 @@ __必选参数:__
 `无`
 __接口地址:__ `http://m.kugou.com/singer/class&json=true`
 
+
+### 歌手分类下面的歌手列表
+
+__说明:__ 获取 歌手分类
+
+__必选参数:__
+
+`classid` 
+
+__接口地址:__ `http://m.kugou.com/singer/list/88?json=true`
+
+
+### 歌手信息
+
+__说明:__ 获取 歌手分类
+
+__必选参数:__
+
+`singerid` : 歌手id  3060 
+
+__接口地址:__ `http://m.kugou.com//singer/info/3060&json=true`
+
+
+
+
