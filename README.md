@@ -62,3 +62,13 @@ __接口地址:__ `http://m.kugou.com/plist/list/125032?json=true`
 __返回数据__
 
 
+### 歌手分类
+
+__说明:__ 获取 歌手分类
+
+
+__必选参数:__
+
+`无`
+__接口地址:__ `http://m.kugou.com/singer/class&json=true`
+
