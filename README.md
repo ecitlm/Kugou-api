@@ -103,6 +103,7 @@ __必选参数:__
 `hash` : 音乐列表下的 音乐id 
 
 __接口地址:__ `http://m.kugou.com/app/i/getSongInfo.php?cmd=playInfo&hash=CB7EE97F4CC11C4EA7A1FA4B516A5D97`
+
 __返回数据__
 ```
 {
@@ -153,6 +154,7 @@ __必选参数:__
 `hash` : 音乐列表下的 音乐id 
 
 __接口地址:__ `http://www.kugou.com/yy/index.php?r=play/getdata&hash=CB7EE97F4CC11C4EA7A1FA4B516A5D97`
+
 __返回数据__
 ```JavaScript
 {
@@ -198,6 +200,7 @@ __必选参数:__
 `count` : 热门搜索关键字返回
 
 __接口地址:__ `http://mobilecdn.kugou.com/api/v3/search/hot?format=json&plat=0&count=30`
+
 __返回数据__
 
 ```JavaScript
@@ -302,6 +305,7 @@ __必选参数:__
 `keyword` : 关键字
 
 __接口地址:__ `http://mobilecdn.kugou.com/api/v3/search/song?format=json&keyword=%E7%8E%8B%E5%8A%9B%E5%AE%8F&page=1&pagesize=20&showtype=1`
+
 __返回数据__
 ```JavaScript
 {
