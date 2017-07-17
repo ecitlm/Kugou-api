@@ -1,6 +1,13 @@
-## 酷狗音乐API接口整理
+>酷狗音乐Web端音乐API接口数据整理,以下接口数据已整理封装在我的基于Node.js+express的项目 [SpliderApi](https://github.com/ecitlm/SpliderApi) 中
 
->酷狗音乐Web端音乐API接口数据整理,以下接口数据已整理封装在我的基于Node.js+express的爬虫项目 [SpliderApi](https://github.com/ecitlm/SpliderApi) 中
+---------------------------------
+
+>本文章仅仅只是学习研究使用,请勿将以下接口要来其他用途，如有版权问题请告知
+
+GitHub地址:
+https://github.com/ecitlm/Kugou-api
+
+
 
 ### 音乐新歌榜
 
@@ -10,6 +17,90 @@ __必选参数:__
 `page`: json
 
 __接口地址:__ `http://m.kugou.com/?json=true`
+
+__返回数据__(这里只显示2条数据)
+
+```javascript
+{
+    "JS_CSS_DATE": 20130320,
+    "kg_domain": "http://m.kugou.com",
+    "src": "http://downmobile.kugou.com/promote/package/download/channel=6",
+    "fr": null,
+    "ver": "v3",
+    "data": [
+        {
+            "pay_type_320": 0,
+            "m4afilesize": 0,
+            "price_sq": 0,
+            "first": 0,
+            "filesize": 1951495,
+            "bitrate": 128,
+            "price": 0,
+            "inlist": 1,
+            "old_cpy": 1,
+            "pkg_price_sq": 0,
+            "pay_type": 0,
+            "topic_url": "",
+            "fail_process_320": 0,
+            "pkg_price": 0,
+            "feetype": 0,
+            "filename": "优我女团 - Call Me 老司机",
+            "price_320": 0,
+            "sqfilesize": 16440071,
+            "hash": "A331C7D3DC826D784124C8DC9284436F",
+            "audio_id": 27176804,
+            "privilege": 0,
+            "fail_process_sq": 0,
+            "addtime": "2017-07-17 09:39:12",
+            "pkg_price_320": 0,
+            "album_audio_id": 66327119,
+            "rp_type": "audio",
+            "mvhash": "1A0E3F4C053110EBB1755B211563D6D2",
+            "recommend_reason": "",
+            "320filesize": 4877616,
+            "rp_publish": 1,
+            "has_accompany": 1,
+            "topic_url_sq": "",
+            "album_id": "2744912",
+            "remark": "Call Me 老司机",
+            "fail_process": 0,
+            "320privilege": 0,
+            "320hash": "1A91FF358E8203B348731C1D9145A063",
+            "sqhash": "9B960899DCB335301E339E76F7827072",
+            "isfirst": 0,
+            "pay_type_sq": 0,
+            "extname": "mp3",
+            "sqprivilege": 0,
+            "topic_url_320": "",
+            "duration": 121
+        },
+      
+        {
+            "imgurl": "http://imge.kugou.com/mobilebanner/20170717/20170717113514278470.jpg",
+            "title": "别废话了，就说你到底喜不喜欢我吧！",
+            "id": 6447,
+            "type": 1,
+            "online": 1500262525,
+            "extra": {
+                "play_count": 1120148,
+                "specialname": "别废话了，就说你到底喜不喜欢我吧！",
+                "publishtime": "2017-06-29",
+                "singername": "",
+                "intro": "磨磨唧唧的急死个人，说这么多废话管用吗？你到底喜不喜欢我？倒是给我直说啊！",
+                "songcount": 20,
+                "imgurl": "http://imge.kugou.com/soft/collection/{size}/20170629/20170629174702627976.jpg",
+                "suid": 509005066,
+                "specialid": 126970,
+                "collectcount": 5,
+                "slid": 30,
+                "tourl": "http://m.kugou.com/plist/list/126970"
+            }
+        }
+    ],
+    "__Tpl": "index/index.html"
+}
+
+```
 
 
 
@@ -21,8 +112,69 @@ __必选参数:__
 
 __接口地址:__ `http://m.kugou.com/rank/list&json=true`
 
-__返回数据__
+__返回数据__(这里只显示3条数据)
 
+```javascript
+{
+    "JS_CSS_DATE": 20130320,
+    "kg_domain": "http://m.kugou.com",
+    "src": "http://downmobile.kugou.com/promote/package/download/channel=6",
+    "fr": null,
+    "ver": "v3",
+    "rank": {
+        "total": 26,
+        "list": [
+            {
+                "rankid": 6666,
+                "id": 1,
+                "ranktype": 2,
+                "intro": "数据来源：酷狗\r\n排序方式：按歌曲搜索播放量的涨幅排序\r\n更新周期：每天",
+                "update_frequency": "每天",
+                "custom_type": 0,
+                "imgurl": "http://imge.kugou.com/mcommon/{size}/20150717/20150717100030907982.png",
+                "banner7url": "http://imge.kugou.com/mcommon/{size}/20150331/20150331161100773965.png",
+                "jump_url": "",
+                "bannerurl": "http://imge.kugou.com/mcommonbanner/{size}/20150331/20150331161102692497.jpg",
+                "jump_title": "",
+                "rankname": "酷狗飙升榜",
+                "isvol": 1
+            },
+            {
+                "rankid": 8888,
+                "id": 2,
+                "ranktype": 2,
+                "intro": "数据来源：酷狗\r\n排序方式：按歌曲搜索播放一周总量排序\r\n更新周期：周四",
+                "update_frequency": "周四",
+                "custom_type": 0,
+                "imgurl": "http://imge.kugou.com/mcommon/{size}/20150717/20150717100046499341.png",
+                "banner7url": "http://imge.kugou.com/mcommon/{size}/20150331/20150331161158855874.png",
+                "jump_url": "",
+                "bannerurl": "http://imge.kugou.com/mcommonbanner/{size}/20150331/20150331161200306618.jpg",
+                "jump_title": "",
+                "rankname": "酷狗TOP500",
+                "isvol": 1
+            },            
+            {
+                "rankid": 24574,
+                "id": 123,
+                "ranktype": 0,
+                "intro": "数据来源：酷狗神曲及搞怪类歌曲\r\n排序方式：按搜索播放一周总量排序\r\n更新周期：周三",
+                "update_frequency": "周三",
+                "custom_type": 0,
+                "imgurl": "http://imge.kugou.com/mcommon/{size}/20160713/20160713115034579027.jpg",
+                "banner7url": "http://imge.kugou.com/mcommon/{size}/20160713/20160713115035225905.jpg",
+                "jump_url": "",
+                "bannerurl": "http://imge.kugou.com/mcommonbanner/{size}/20160713/20160713115036492119.jpg",
+                "jump_title": "",
+                "rankname": "洗脑神曲",
+                "isvol": 0
+            }
+        ]
+    },
+    "__Tpl": "rank/list.html"
+}
+
+```
 
 ###  排行版分类歌曲列表
 
@@ -304,7 +456,8 @@ __必选参数:__
 
 `keyword` : 关键字
 
-__接口地址:__ `http://mobilecdn.kugou.com/api/v3/search/song?format=json&keyword=%E7%8E%8B%E5%8A%9B%E5%AE%8F&page=1&pagesize=20&showtype=1`
+__接口地址:__ 
+`http://mobilecdn.kugou.com/api/v3/search/song?format=json&keyword=%E7%8E%8B%E5%8A%9B%E5%AE%8F&page=1&pagesize=20&showtype=1`
 
 __返回数据__
 ```JavaScript
@@ -866,9 +1019,3 @@ __返回数据__
 }
 
 ```
-
-
-
-
-
-
