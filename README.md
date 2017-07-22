@@ -244,7 +244,7 @@ __必选参数:__
 
 `singerid` : 歌手id  3060 
 
-__接口地址:__ `http://m.kugou.com/singer/info/3060&json=true`
+__接口地址:__ `http://m.kugou.com/singer/info/3060&json=true` `该接口目前有些问题 需要追加request headers 设置成手机浏览器`
 
 ### 歌曲音乐详情
 
