@@ -4,7 +4,7 @@
 
 
 
->酷狗音乐Web端音乐API接口数据整理,以下接口数据已整理封装在我的基于Node.js+express的项目 [SpliderApi](https://github.com/ecitlm/SpliderApi)  music模块中
+>酷狗音乐Web端音乐API接口数据整理,以下接口数据已整理封装在我的基于Node.js+express的项目 [Node-SpliderApi](https://github.com/ecitlm/SpliderApi)  music模块中
 
 >本文章仅仅只是学习研究使用,请勿将以下接口要来其他用途，如有版权问题请告知删除
 
