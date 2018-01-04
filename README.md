@@ -1023,3 +1023,17 @@ __返回数据__
 }
 
 ```
+### mv搜索
+
+__说明:__ 获取mv搜索列表
+
+__必选参数:__
+
+__接口地址:__
+
+`http://mvsearch.kugou.com/mv_search?keyword=%E6%B5%B7%E9%98%94%E5%A4%A9%E7%A9%BA&page=1&pagesize=30&userid=-1&clientver=&platform=WebFilter&tag=em&filter=2&iscorrection=1&privilege_filter=0&_=1515052279917`
+
+__返回数据__(这里只显示2条数据)
+
+```javascript
+```
