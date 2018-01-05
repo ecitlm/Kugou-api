@@ -1037,3 +1037,18 @@ __返回数据__(这里只显示2条数据)
 
 ```javascript
 ```
+### mv详情
+
+__说明:__ 获取mv详情、包括MP4文件
+
+__必选参数:__
+
+__接口地址:__
+`hash` mvhsah
+`http://m.kugou.com/app/i/mv.php?cmd=100&hash=5F8393A55D5762A63F1A5E92B46E575E&ismp3=1&ext=mp4`
+
+__返回数据__()
+
+```javascript
+```
+
